@@ -1,0 +1,287 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: url('https://w.wallhaven.cc/full/gp/wallhaven-gpg5ql.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.header__main {
+  background-color: rgba(49, 50, 51, 0.8);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 100px;
+  mix-blend-mode: difference;
+}
+
+.header_items {
+  display: flex;
+  gap: 20px;
+}
+
+.header_items a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.header_items a:hover {
+  color: #ffcc00;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: 0.4s ease-in-out;
+}
+
+.card {
+  background-image: linear-gradient(163deg, #00ff75 0%, #2a10bc 100%);
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+
+.card {
+  width: 40%;
+  margin: 250px 500px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.6em;
+  padding-right: 1.6em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+
+.button2 {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button2:hover {
+  background-color: black;
+  color: white;
+}
+
+.button3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button3:hover {
+  background-color: red;
+  color: white;
+}
+/* FOOTERE */
+.footer{
+  background-color: #FF6500;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.footer .h2{
+  letter-spacing: 10px;
+  padding: 50px;
+  color: white;
+}
+.flex_footer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: start;
+  align-items:flex-start;
+  margin-left: 100px;
+  
+
+}
+
+.flex_footer h6 a {
+  color: rgb(85, 85, 85);
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.flex_footer h6 a:hover{
+  transition: all 1s;
+  color: rgb(212, 210, 210);
+
+}
+.image__footer img{
+  width: 100px;
+}
+.footer ._end_of_page {
+  padding: 20px;
+}
+
+/* Medias */
+@media (min-width: 320px) and (max-width: 425px) {
+  .card {
+      width: 90%;
+      margin: 20px auto;
+  }
+  .btn .button1{
+    width: 70px;
+    
+  }
+
+  .logo-img {
+      width: 70px;
+  }
+
+  .header_items {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .input-icon {
+      height: 1em;
+      width: 1em;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 1024px) {
+  .card {
+      width: 70%;
+      margin: 50px auto;
+  }
+
+  .logo-img {
+      width: 80px;
+  }
+
+  .header_items {
+      gap: 15px;
+  }
+
+  .input-icon {
+      height: 1.2em;
+      width: 1.2em;
+  }
+}
+
+@media (max-width: 1440px) {
+  .card {
+      width: 50%;
+      margin: 150px auto;
+  }
+
+  .logo-img {
+      width: 90px;
+  }
+
+  .header_items {
+      gap: 20px;
+  }
+
+  .input-icon {
+      height: 1.3em;
+      width: 1.3em;
+  }
+}
